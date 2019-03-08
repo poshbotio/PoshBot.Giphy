@@ -33,7 +33,16 @@ function Get-Giphy {
     $d = Invoke-RestMethod @params
     if ($d.data) {
         $url = ($d.data | Get-Random -Count $Number).images.downsized.url
-        Write-Output $url
+        if ($global:PoshbotContext.BackendType -in @('TeamsBackend')) {
+            foreach ($gif in $url) {
+                Write-Output "Preview:</br>
+                ![img]($($gif))</br>
+                [View online]($($gif))"
+                }
+        }
+        else {
+            Write-Output $url
+        }        
     } else {
         Write-Output 'No results found'
     }
