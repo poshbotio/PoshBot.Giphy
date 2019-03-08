@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 
-- [**#2**](https://github.com/poshbotio/PoshBot.Giphy/pull/2) Return GIF in markdown format when executed with MS Teams backend so image is displayed (via @[medea61](https://github.com/medea61))
+- [**#2**](https://github.com/poshbotio/PoshBot.Giphy/pull/2) Return GIF in markdown format when executed with MS Teams backend so image is displayed (via [@medea61](https://github.com/medea61))
 
 ## [1.0.2] - 2017-06-09
 
